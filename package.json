@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "build": "rollup -c",
     "test": "node --experimental-modules --es-module-specifier-resolution=node test.js"
   },
   "repository": {
@@ -24,6 +25,9 @@
   },
   "homepage": "https://github.com/kerryrodden/tiny-tfidf#readme",
   "devDependencies": {
+    "rollup": "^1.26.3",
+    "rollup-plugin-ascii": "0.0.3",
+    "rollup-plugin-terser": "^5.1.2",
     "tape": "^4.11.0"
   }
 }
